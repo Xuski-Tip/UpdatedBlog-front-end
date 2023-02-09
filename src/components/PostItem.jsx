@@ -21,7 +21,7 @@ export const PostItem = ({ post }) => {
                 >
                     {post.imgUrl && (
                         <img
-                            src={`http://localhost:3002/${post.imgUrl}`}
+                            src={`${process.env.REACT_APP_APP_URL}/{post.imgUrl}`}
                             alt='img'
                             className='object-cover w-full'
                         />
